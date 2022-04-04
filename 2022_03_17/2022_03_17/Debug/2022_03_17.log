@@ -1,0 +1,3 @@
+﻿  if_220401.c
+C:\ksh_workspace\2022_03_17\2022_03_17\if_220401.c(238,6): warning C4013: 'gets'이(가) 정의되지 않았습니다. extern은 int형을 반환하는 것으로 간주합니다.
+  2022_03_17.vcxproj -> C:\ksh_workspace\2022_03_17\Debug\2022_03_17.exe
