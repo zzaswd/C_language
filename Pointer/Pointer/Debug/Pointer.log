@@ -1,0 +1,4 @@
+﻿  pointer_alone.c
+C:\ksh_workspace\C_language\Pointer\Pointer\pointer_alone.c(94,9): warning C4133: '=': 'int *'과(와) 'double *' 사이의 형식이 호환되지 않습니다.
+C:\ksh_workspace\C_language\Pointer\Pointer\pointer_alone.c(96,9): warning C4477: 'printf' : 서식 문자열 '%d'에 'int' 형식의 인수가 필요하지만 variadic 인수 1의 형식이 'double'입니다.
+  Pointer.vcxproj -> C:\ksh_workspace\C_language\Pointer\Debug\Pointer.exe
