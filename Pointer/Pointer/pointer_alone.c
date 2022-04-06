@@ -86,22 +86,43 @@
 
 
 
-int main(void) {
-	int a = 10;
-	int* pi = &a;
-	double* pd;
-	
-	pd = pi;
+//int main(void) {
+//	int a = 10;
+//	int* pi = &a;
+//	double* pd;
+//	
+//	pd = pi;
+//
+//	printf("%d\n", *pd);
+//
+//
+//	double db = 3.4;
+//	pd = &db;
+//
+//	pi = (int*)pd;
+//
+//	printf("%d", *pi);
+//
+//	return 0;
+//}
 
-	printf("%d\n", *pd);
 
-
-	double db = 3.4;
-	pd = &db;
-
-	pi = (int*)pd;
-
-	printf("%d", *pi);
-
-	return 0;
-}
+//int main(void) {
+//
+//
+//
+//	//int arr[5];
+//	//arr[0] = 1;
+//	//arr[1] = 2;
+//	//scanf_s("%d", arr + 1);
+//
+//	//printf("%d, %d ", arr[0],arr[1]);
+//	double arr[5];
+//	arr[0] = 1.0;
+//	arr[1] = 2.0;
+//
+//	scanf_s("%lf", arr+1);
+//	printf("%lf,%lf", arr[0],arr[1]);
+//
+//
+//}
