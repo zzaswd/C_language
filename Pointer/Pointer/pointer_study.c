@@ -1,4 +1,5 @@
 #include<stdio.h>
+#include<string.h>
 
 
 //int main_236p(void) {
@@ -182,3 +183,116 @@
 //	return 0;
 //}
 
+
+//int main_275p(void) {
+//
+//	int arr[5] = { 10,20,30,40,50 };
+//	int* pa = arr;
+//	int* pb = pa + 3;
+//	printf("pa : %u\n", pa);
+//	printf("pb : %u\n", pb); // pb와 pa의 차이는 sizeof(int) * 3의 차이.
+//
+//	pa++;
+//	printf("pb - pa : %u\n", pb - pa); // 2. 주소 차이는 8나고 int형 크기인 4로 나누면 2.
+//
+//	printf("앞에 있는 배열 요소의 값 출력 : ");
+//	if (pa < pb) printf("%d", *pa);
+//	else printf("%d", *pb);
+//
+//	return 0;
+//}
+
+
+
+//void print_arr(int* pa);
+//
+//int main_282p(void) {
+//	int arr[5] = { 1,2,3,4,5 };
+//
+//	print_arr(arr);
+//	printf("\n");
+//	for (int i = 0; i < 5; i++) {
+//
+//		printf("%d ", arr[i]);
+//	}
+//	return 0;
+//}
+//
+//void print_arr(const int* pa) {
+//
+//	for (int i = 0; i < 5; i++) {
+//		//printf("%d ", *(pa + i));
+//		//pa[3] = 1000;
+//		printf("%d ", pa[i]);
+//	}
+//
+//}
+
+
+//void print_arr(int* pa, int size);
+//
+//int main_284p(void) {
+//	int arr1[] = { 1,2,3,4,5 };
+//	int arr2[] = { 1,2,3,4,5,6,7 };
+//
+//	print_arr(arr1, sizeof(arr1) / sizeof(arr1[1]));
+//	printf("\n");
+//	print_arr(arr2, sizeof(arr2) / sizeof(arr2[1]));
+//
+//	return 0;
+//
+//}
+//
+//void print_arr(int* pa, int size) {
+//
+//	for (int i = 0; i < size; i++) {
+//		printf("%d ", pa[i]);
+//	}
+//}
+
+
+//void input_arr(double* pa, int size);
+//double find_max(double* pa, int size);
+//
+//int main(void) {
+//
+//	double arr[5];
+//	double max;
+//	int size = sizeof(arr) / sizeof(arr[1]);
+//
+//	input_arr(arr, size);
+//	max = find_max(arr, size);
+//	printf("배열의 최대값 : %.1lf\n", max);
+//	return 0;
+//
+//}
+//
+//void input_arr(double* pa, int size) {
+//
+//	for (int i = 0; i < size; i++) {
+//		scanf_s("%lf", &pa[i]);
+//	}
+//}
+//
+//double find_max(double* pa, int size) {
+//	
+//	double max = pa[0];
+//	for (int i = 1; i < size; i++) {
+//		if (pa[i] > max) max = pa[i];
+//	}
+//
+//	return max;
+//}
+
+
+int main(void) {
+
+	int a = 100;
+	for (int a = 0; a < 5; a++) {
+		a++;
+	}
+
+	printf("%d", a);
+
+	return 0;
+}

@@ -295,3 +295,6 @@
 //		printf("%d ", lotto_nums[i]);
 //	}
 //}
+
+
+ 

@@ -1,4 +1,5 @@
-//#include<stdio.h>
+#include<stdio.h>
+
 //
 //void swap(double* pa, double* pb);
 //void line_up(double* maxp, double* midp, double* minp);
@@ -41,4 +42,13 @@
 //		line_up(maxp, midp, minp);
 //	}
 //
+//}
+
+//int main(void) {
+//
+//	char str[5]="a";
+//
+//	scanf_s("%s", str,5);
+//
+//	return 0;
 //}
