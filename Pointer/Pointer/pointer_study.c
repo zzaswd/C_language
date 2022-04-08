@@ -285,14 +285,36 @@
 //}
 
 
-int main(void) {
 
-	int a = 100;
-	for (int a = 0; a < 5; a++) {
-		a++;
-	}
-
-	printf("%d", a);
-
-	return 0;
-}
+//double find_max(double* pa, int size);
+//
+//int main(void) {
+//
+//	
+//	double arr[5] = { 1.0,2.0,13.0,4.0,5.0 };
+//	printf("5개의 실수값 입력 : ");
+//	for (int i = 0; i < 5; i++) {
+//		printf("%.1lf ",arr[i]);
+//	}
+//
+//	printf("\n");
+//	double max;
+//	int size = sizeof(arr) / sizeof(arr[0]);
+//	max = find_max(arr, size);
+//
+//	printf("배열의 최대 값 : %.1lf",max);
+//	
+//
+//	return 0;
+//}
+//
+//
+//double find_max(double* pa, int size) {
+//	double max = pa[0];
+//
+//	for (int i = 1; i < size; i++) {
+//		if (pa[i] > max) max = pa[i];
+//	}
+//
+//	return max;
+//}
