@@ -15,13 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="variable.c">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="multiarr_study.c">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="multiarr_alone.c">
+    <ClCompile Include="Chapter15.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>
