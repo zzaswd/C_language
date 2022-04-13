@@ -26,7 +26,7 @@
 //
 //int sum(int a, int b);
 //int mul(int a, int b);
-//int max(int a, int b);
+//int Max(int a, int b);
 //
 //int main(void) {
 //	int sel;
@@ -44,7 +44,7 @@
 //
 //	case 2: func(mul);
 //		break;
-//	case 3: func(max);
+//	case 3: func(Max);
 //		break;
 //	}
 //
@@ -65,7 +65,7 @@
 //int mul(int a, int b) {
 //	return a * b;
 //}
-//int max(int a, int b) {
+//int Max(int a, int b) {
 //	if (a >= b) {
 //		return a;
 //	}
@@ -129,3 +129,6 @@
 //
 //	return 0;
 //}
+
+// å 454p malloc arr
+

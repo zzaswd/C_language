@@ -18,5 +18,8 @@
     <ClCompile Include="Chapter15.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="strtok.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
