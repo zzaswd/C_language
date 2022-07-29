@@ -12,9 +12,9 @@
     <OutputFileName>$(MSBuildProjectName)</OutputFileName>
     <OutputFileExtension>.elf</OutputFileExtension>
     <OutputDirectory>$(MSBuildProjectDirectory)\$(Configuration)</OutputDirectory>
-    <AssemblyName>Project_LCD</AssemblyName>
-    <Name>Project_LCD</Name>
-    <RootNamespace>Project_LCD</RootNamespace>
+    <AssemblyName>Project_Serial_RFID</AssemblyName>
+    <Name>Project_Serial_RFID</Name>
+    <RootNamespace>Project_Serial_RFID</RootNamespace>
     <ToolchainFlavour>Native</ToolchainFlavour>
     <KeepTimersRunning>true</KeepTimersRunning>
     <OverrideVtor>false</OverrideVtor>
@@ -138,7 +138,31 @@
     </ToolchainSettings>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="Remote.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Remote.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Servo.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Servo.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="UART.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="LCD.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="LCD.h">
+      <SubType>compile</SubType>
+    </Compile>
     <Compile Include="main.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="UART.h">
       <SubType>compile</SubType>
     </Compile>
   </ItemGroup>

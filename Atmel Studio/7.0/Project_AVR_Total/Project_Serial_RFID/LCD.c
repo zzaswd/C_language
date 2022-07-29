@@ -1,31 +1,14 @@
-/*
- * Project_LCD.c
+﻿/*
+ * LCD.c
  *
- * Created: 2022-07-28 오전 11:02:20
- * Author : KCCI10
+ * Created: 2022-07-28 오후 9:49:27
+ *  Author: KCCI10
  */ 
-#define F_CPU 14745600L
-#include <avr/io.h>
-#include <avr/interrupt.h>
-#include <util/delay.h>
 
-#define PORT_DATA		PORTA
-#define PORT_CONTROL	PORTC
-#define DDR_DATA		DDRA
-#define DDR_CONTROL		DDRC
+#include "LCD.h"
 
-#define RS_PIN 0
-#define RW_PIN 1
-#define E_PIN 2
-
-#define COMMAND_CLEAR_DISPLAY 0x01
-#define COMMAND_8_BIT_MODE	0x38
-#define COMMAND_4_BIT_MODE	0x28
-
-#define COMMAND_DISPLAY_ON_OFF_BIT	2
-#define COMMNAD_CURSOR_ON_OFF_BIT	1
-#define COMMAND_BLINK_ON_OFF_BIT	0
-
+volatile unsigned char Num[] = { "0123456789" };
+	
 void LCD_pulse_enable(void){
 	PORT_CONTROL |= (1<<E_PIN);
 	_delay_ms(1);
@@ -77,44 +60,31 @@ void LCD_write_string(char *string){
 	}
 }
 
+
 void LCD_goto_XY(uint8_t row, uint8_t col){
-	col %=16;
+	col %= 16;
 	row %=2;
 	
-	uint8_t address = (0x40 * row) +col;
+	uint8_t address = (0x40 * row) + col;
 	uint8_t command = 0x80 + address;
 	
 	LCD_write_command(command);
 }
 
 
-
-
-
-
-
-int main(void)
+void LCD_IR(unsigned int data)   // 4자리수 표시 함수
 {
-	LCD_init();
-	LCD_write_string("Hello JMS");
-	_delay_ms(1000);
-	LCD_clear();
+	static int j, k, l, m = 0;
+	int buff;
+	j = data / 1000;   // 1000의 자리
+	buff = data % 1000;
+	k = buff / 100;   // 100의 자리
+	buff = buff % 100;
+	l = buff / 10;      // 10의 자리
+	m = buff % 10;      // 1의 자리
 	
-	LCD_goto_XY(0,0);
-	LCD_write_data('1');
-	_delay_ms(1);
-	LCD_goto_XY(0,5);
-	LCD_write_data('2');
-	_delay_ms(1);
-	LCD_goto_XY(1,0);
-	LCD_write_data('3');
-	_delay_ms(1);
-	LCD_goto_XY(1,5);
-	LCD_write_data('4');
-	_delay_ms(1);
-    /* Replace with your application code */
-    while (1) 
-    {
-    }
+	LCD_write_data(Num[j]);
+	LCD_write_data(Num[k]);
+	LCD_write_data(Num[l]);
+	LCD_write_data(Num[m]);
 }
-
