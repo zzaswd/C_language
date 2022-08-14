@@ -9,9 +9,10 @@
 
 ---------
 ## ATmel Project - 원격 두더지 잡기
-![image](https://user-images.githubusercontent.com/78605108/184518558-139186b5-2bf9-4263-8242-14d45b603887.png)
-![image](https://user-images.githubusercontent.com/78605108/184518564-d6d56354-2d52-4e1c-a68b-eab9ff9bc13d.png)
+  ![image](https://user-images.githubusercontent.com/78605108/184518558-139186b5-2bf9-4263-8242-14d45b603887.png)
+  ![image](https://user-images.githubusercontent.com/78605108/184518564-d6d56354-2d52-4e1c-a68b-eab9ff9bc13d.png)
 
+-----------
 > 개발환경
 ![image](https://user-images.githubusercontent.com/78605108/184518614-a9fe087e-eebf-48d1-94b8-be68c986e06e.png)
 
@@ -23,6 +24,14 @@
 3. IR 신호를 받으면 LED  0.1초 On되며 해당 번호에 맞는 Servo Motor 각도 변환 & 점수 증가
 4. 일정 시간내에 반복되는 입력은 감점 요소로 판단하여 감점
 5. 상기 모든 과정은 LCD에 출력
+
+---------------
+> 동작영상
+  1. Arduino끼리만
+    https://youtu.be/_ICmJPCww5g
+  2. Arduino와 ATmel
+    https://www.youtube.com/watch?v=Xb8SpBx7FgU
+  
 
 ------------
 > 핵심코드
